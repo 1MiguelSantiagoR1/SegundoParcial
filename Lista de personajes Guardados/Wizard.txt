@@ -1,0 +1,8 @@
+Custom Wizard : 
+Information ---------- 
+Name: Ryze
+Level: 1
+XP: 0
+Inventory ----------  
+Weapon: Book of Destiny
+Outfit: Sombrero de Hechizero

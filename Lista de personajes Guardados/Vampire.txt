@@ -1,0 +1,10 @@
+Custom Vampire : 
+Information ---------- 
+Name: Vladimir
+Level: 1
+XP: 0
+Inventory ----------  
+Weapon: The sanguinary
+Outfit: Dracula´s Boots
+Item: Health Potion
+Item: Ice Axe

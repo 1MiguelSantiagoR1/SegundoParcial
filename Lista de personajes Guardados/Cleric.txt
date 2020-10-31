@@ -1,0 +1,11 @@
+Custom Cleric : 
+Information ---------- 
+Name: Slade
+Level: 1
+XP: 0
+Inventory ----------  
+Weapon: Merlin´s Stick
+Outfit: Agility cape
+Item: Health Potion
+Item: Health Potion
+Item: Ice Axe

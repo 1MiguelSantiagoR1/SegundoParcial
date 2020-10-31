@@ -1,0 +1,8 @@
+Custom Fighter : 
+Information ---------- 
+Name: Arturo
+Level: 1
+XP: 0
+Inventory ----------  
+Weapon: King´s Sword
+Outfit: Futuristic armor

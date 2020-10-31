@@ -1,0 +1,78 @@
+﻿<Window x:Class="FirstFantasy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstFantasy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Name="TxtOutput" HorizontalAlignment="Left" Margin="242,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="194" Background="#FFC1EEEC" FontWeight="Bold"/>
+        <Button Name="BtnCreate" Content="Create" HorizontalAlignment="Left" Margin="94,106,0,0" VerticalAlignment="Top" Width="112" Click="BtnCreate_Click"/>
+        <ComboBox Name="CboxCharacter" HorizontalAlignment="Left" Margin="90,56,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="" IsSelected="True" />
+            <ComboBoxItem Content="Cleric" />
+            <ComboBoxItem Content="Fighter" />
+            <ComboBoxItem Content="Vampire" />
+            <ComboBoxItem Content="Wizard" />
+        </ComboBox>
+        <Label Content="Character Information" HorizontalAlignment="Left" Margin="237,25,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="242,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="194" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="90,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label Content="Clase" HorizontalAlignment="Left" Margin="90,25,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="242,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="194" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label Content="Inventory" HorizontalAlignment="Left" Margin="237,125,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Show Information" HorizontalAlignment="Left" Margin="322,131,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <Rectangle Visibility="Hidden" Name="Rectangle_Items" HorizontalAlignment="Left" Height="1" Margin="242,278,0,0" Stroke="Black" VerticalAlignment="Top" Width="255" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label Visibility="Hidden" Name="Label_items" Content="Items Information" HorizontalAlignment="Left" Margin="237,253,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TxtOutput3" Visibility="Hidden" HorizontalAlignment="Left" Margin="242,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="97" Width="255" Background="#FFC1EEEC" FontWeight="Bold"/>
+        <Button Content="Save Character" HorizontalAlignment="Left" Margin="441,58,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBlock x:Name="TxtOutput2" HorizontalAlignment="Left" Margin="242,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="194" Background="#FFC1EEEC" FontWeight="Bold"/>
+        <Image Height="221" Name="Wizzard" Visibility="Hidden" Margin="498,38,12,0" VerticalAlignment="Top" Source="/Resources/41f1a25db56246cab6e2a68ce6521024NCBQsNrp7vfhe2Fe-0.png"/>
+        <Image Name="vampiree" HorizontalAlignment="Left" Visibility="Hidden" Height="256" Margin="552,20,0,0" VerticalAlignment="Top" Width="278" Source="/Resources/Vampire.png"/>
+        <Image Name="Clericc" HorizontalAlignment="Left" Visibility="Hidden" Height="259" Margin="552,7,0,0" VerticalAlignment="Top" Width="288" Source="/Resources/heroes1.png"/>
+        <Image Name="Fighterr" HorizontalAlignment="Left" Visibility="Hidden" Height="208" Margin="523,44,0,0" VerticalAlignment="Top" Width="229" Source="/Resources/Guerrero.png"/>
+        <ListBox Visibility="Visible" Name="ListBoxShop" Margin="94,156,590,135" Background="#FFC1EEEC"/>
+        <CheckBox Content="Open Shop" HorizontalAlignment="Left" Margin="94,135,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_1"/>
+        <Button Name="Button1" Visibility="Visible" Content="Add" HorizontalAlignment="Left" Margin="94,299,0,0" VerticalAlignment="Top" Width="40" Click="Button1_Click"/>
+        <Button Name="attackbutton" Content="Attack" HorizontalAlignment="Left" Margin="507,277,0,0" VerticalAlignment="Top" Click="attackbutton_Click"/>
+        <TextBox Name="attackbox" HorizontalAlignment="Left" Height="92" Margin="549,278,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+
+    </Grid>
+</Window>

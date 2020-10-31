@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="41f1a25db56246cab6e2a68ce6521024NCBQsNrp7vfhe2Fe-0.png" />
+    <None Remove="Guerrero.png" />
+    <None Remove="heroes1.png" />
+    <None Remove="Resources\41f1a25db56246cab6e2a68ce6521024NCBQsNrp7vfhe2Fe-0.png" />
+    <None Remove="Vampire.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Guerrero.png" />
+    <Resource Include="Resources\Guerrero.png" />
+    <Resource Include="Resources\41f1a25db56246cab6e2a68ce6521024NCBQsNrp7vfhe2Fe-0.png" />
+    <Resource Include="Resources\heroes1.png" />
+    <Resource Include="Resources\Vampire.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
